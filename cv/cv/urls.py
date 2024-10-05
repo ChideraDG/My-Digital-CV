@@ -27,4 +27,6 @@ urlpatterns = [
     path("portfolio/", views.portfolio, name="portfolio"),
     path("portfolio/estate-manage/", views.estate_manage, name="estate-manage"),
     path("portfolio/banking/", views.banking, name="banking"),
+    path("portfolio/mini-calculator/", views.calculator, name="calc"),
+    path("portfolio/tic-tac-toe/", views.tic_tac_toe, name="tic"),
 ]

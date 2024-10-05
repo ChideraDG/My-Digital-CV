@@ -35,3 +35,9 @@ def estate_manage(request):
 
 def banking(request):
     return render(request, "portfolio_banking_detail.html")
+
+def calculator(request):
+    return render(request, "portfolio_calc_detail.html")
+
+def tic_tac_toe(request):
+    return render(request, "portfolio_tic_detail.html")

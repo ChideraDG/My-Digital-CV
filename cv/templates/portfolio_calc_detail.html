@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}<title>Chidera Divine-Gift : Mini-Calculator</title>{% endblock title %}
+
+{% block portfolio %}active{% endblock portfolio %}
+
+{% block content %}
+    <main id="main" style="margin-top: 100px">
+
+        <!-- ======= Portfolio Details Section ======= -->
+        <section id="portfolio-details" class="portfolio-details">
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-8">
+                        <div class="portfolio-details-slider swiper">
+                            <div class="swiper-wrapper align-items-center">
+
+                                <div class="swiper-slide">
+                                    <img src={% static "img/C1.png" %} alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src={% static "img/C2.png" %} alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src={% static "img/C3.png" %} alt="">
+                                </div>
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="portfolio-info">
+                            <h3>Project information</h3>
+                            <ul>
+                                <li><strong>Category</strong>: Python</li>
+                                {% comment %} <li><strong>Client</strong>: ASU Company</li> {% endcomment %}
+                                <li><strong>Project date</strong>: December, 2023</li>
+                                <li><strong>Project URL</strong>: <a href="https://github.com/ChideraDG/Mini-Calculator" target="_blank">Github</a></li>
+                            </ul>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="col-lg-11">
+                        {% comment %} <div class="portfolio-description"> {% endcomment %}
+                    </div>
+                </div>
+            </div>
+        </section><!-- End Portfolio Details Section -->
+    </main><!-- End #main -->
+{% endblock %}

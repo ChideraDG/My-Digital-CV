@@ -1,0 +1,202 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}<title>Chidera Divine-Gift : Banking Project</title>{% endblock title %}
+
+{% block portfolio %}active{% endblock portfolio %}
+
+{% block content %}
+    <main id="main" style="margin-top: 100px">
+
+        <!-- ======= Portfolio Details Section ======= -->
+        <section id="portfolio-details" class="portfolio-details">
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-8">
+                        <div class="portfolio-details-slider swiper">
+                            <div class="swiper-wrapper align-items-center">
+
+                                <div class="swiper-slide">
+                                    <img src={% static "img/B1.png" %} alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src={% static "img/B2.png" %} alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src={% static "img/B3.png" %} alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src={% static "img/B4.png" %} alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src={% static "img/B5.png" %} alt="">
+                                </div>
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="portfolio-info">
+                            <h3>Project information</h3>
+                            <ul>
+                                <li><strong>Category</strong>: Python</li>
+                                {% comment %} <li><strong>Client</strong>: ASU Company</li> {% endcomment %}
+                                <li><strong>Project date</strong>: April, 2024</li>
+                                <li><strong>Project URL</strong>: <a href="https://github.com/ChideraDG/Console-Banking-System" target="_blank">Github</a></li>
+                            </ul>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="col-lg-11">
+                        <div class="portfolio-description">
+                            <h2>Console Banking System Report</h2>
+                            <p>The Console Banking System is a comprehensive banking software developed to simulate the core functions of a modern bank. It allows users to perform various banking operations such as account management, money transfers, balance inquiries, and loan services. Designed with a focus on simplicity and functionality, the system runs entirely on a console interface.</p>
+                        
+                            <h2 class="mt-4">System Overview</h2>
+                            <p>The system operates through a command-line interface, providing users with an easy-to-navigate menu. It supports a range of banking features, replicating the services available at a physical bank branch.</p>
+                        
+                            <h2 class="mt-4">Core Functions</h2>
+                            <ul>
+                                <li>
+                                    <strong>Account Creation: </strong>
+                                    <ul class="mt-2">
+                                        <li>Users can open new accounts by providing personal information, setting up a unique account number, and assigning a PIN for secure transactions.</li>
+                                        <li>The system supports multiple account types, such as savings accounts, checking accounts, and joint accounts.</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Balance Inquiry: </strong>
+                                    <ul class="mt-2">
+                                        <li>Users can check their account balance at any time by entering their account number and PIN.</li>
+                                        <li>The system ensures secure access to account information through password authentication.</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Money Transfer: </strong>
+                                    <ul class="mt-2">
+                                        <li>Users can transfer funds between their own accounts or send money to other users within the same system.</li>
+                                        <li>The system supports real-time transfers with confirmation receipts for successful transactions.</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Deposit & Withdrawal: </strong>
+                                    <ul class="mt-2">
+                                        <li>Users can make deposits into their accounts and withdraw funds using secure PIN authentication.</li>
+                                        <li>Deposits update account balances instantly, while withdrawals ensure that users do not exceed their available balance.</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Loan Services: </strong>
+                                    <ul class="mt-2">
+                                        <li>Users can apply for loans based on predefined criteria such as credit history, income, and existing account balances.</li>
+                                        <li>Loan approval and repayment tracking are automated, allowing users to monitor their loan status.</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Transaction History: </strong>
+                                    <ul class="mt-2">
+                                        <li>The system logs all user transactions, allowing users to view their transaction history, including deposits, withdrawals, and transfers.</li>
+                                        <li>Users can access detailed information about each transaction, such as time, date, and transaction type.</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Account Management: </strong>
+                                    <ul class="mt-2">
+                                        <li>Users can update their personal information (such as address and phone number), reset PINs, or close accounts securely.</li>
+                                        <li>The system ensures that all updates are authenticated and recorded in the system log.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        
+                            <h2 class="mt-4">Security Features</h2>
+                            <ul>
+                                <li class="mt-3">
+                                    <strong>PIN Authentication:</strong> The system requires users to enter a secure PIN for every critical transaction.
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Encrypted Data:</strong> All user information and transaction details are encrypted to prevent unauthorized access.
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Transaction Logs:</strong> Every action performed by the user is logged for auditing purposes, ensuring transparency and accountability.
+                                </li>
+                            </ul>
+                        
+                            <h2 class="mt-4">Challenges Addressed</h2>
+                            <ul>
+                                <li>
+                                    <strong>User Authentication:</strong>
+                                    <ul class="mt-2">
+                                        <li>Implemented a secure system where users must authenticate themselves before accessing any banking services.</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Real-Time Transactions:</strong>
+                                    <ul class="mt-2">
+                                        <li>Ensured that all transfers, deposits, and withdrawals occur in real-time, replicating real-world banking.</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Loan Management:</strong>
+                                    <ul class="mt-2">
+                                        <li>Brought in an automated loan management system, reducing manual intervention and simplifying the loan approval process.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        
+                            <h2 class="mt-4">Technologies & Tools</h2>
+                            <ul>
+                                <li>
+                                    <strong>Programming Language:</strong> Developed using [Programming Language].
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Data Storage:</strong> All user data, including account details and transaction logs, is stored using [Database/File Handling Technique].
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Error Handling:</strong> Implemented robust error-handling mechanisms to ensure that system operations are smooth, even in edge cases.
+                                </li>
+                            </ul>
+                        
+                            <h2 class="mt-4">Future Plans</h2>
+                            <ul>
+                                <li>
+                                    <strong>Real-Time Chat Integration:</strong>
+                                    <ul class="mt-2">
+                                        <li>Enhance the chat system by incorporating real-time functionality using WebSockets.</li>
+                                        <li>Allow for faster communication between users without refreshing the page.</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Mobile App Integration:</strong>
+                                    <ul class="mt-2">
+                                        <li>Build a mobile application for easier access to banking features on the go.</li>
+                                        <li>Allow users to interact with the system from their mobile devices.</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Payment Gateway Integration:</strong>
+                                    <ul class="mt-2">
+                                        <li>Integrate popular payment gateways for seamless transactions.</li>
+                                        <li>Provide multiple payment options for users, ensuring greater flexibility and convenience.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        
+                            <h2 class="mt-4">Conclusion</h2>
+                            <p>The Console Banking System is a fully functioning, secure, and user-friendly software that replicates most of the operations of a physical bank. It provides an effective solution for users to manage their finances and perform various banking transactions from a console interface. The system has room for further enhancements, with potential for expanded features and greater user accessibility.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End Portfolio Details Section -->
+    </main><!-- End #main -->
+{% endblock %}
