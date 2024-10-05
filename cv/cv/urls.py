@@ -25,4 +25,6 @@ urlpatterns = [
     path("resume/", views.resume, name="resume"),
     path("services/", views.services, name="services"),
     path("portfolio/", views.portfolio, name="portfolio"),
+    path("portfolio/estate-manage/", views.estate_manage, name="estate-manage"),
+    path("portfolio/banking/", views.banking, name="banking"),
 ]

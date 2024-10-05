@@ -1,0 +1,265 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}<title>Chidera Divine-Gift : Estate Management Project</title>{% endblock title %}
+
+{% block portfolio %}active{% endblock portfolio %}
+
+{% block content %}
+    <main id="main" style="margin-top: 100px">
+
+        <!-- ======= Portfolio Details Section ======= -->
+        <section id="portfolio-details" class="portfolio-details">
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-8">
+                        <div class="portfolio-details-slider swiper">
+                            <div class="swiper-wrapper align-items-center">
+
+                                <div class="swiper-slide">
+                                    <img src={% static "img/S1.png" %} alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src={% static "img/S2.png" %} alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src={% static "img/S3.png" %} alt="">
+                                </div>
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="portfolio-info">
+                            <h3>Project information</h3>
+                            <ul>
+                                <li><strong>Category</strong>: Django</li>
+                                {% comment %} <li><strong>Client</strong>: ASU Company</li> {% endcomment %}
+                                <li><strong>Project date</strong>: March, 2024</li>
+                                <li><strong>Project URL</strong>: <a href="https://github.com/ChideraDG/Estate-Management" target="_blank">Github</a></li>
+                            </ul>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="col-lg-11">
+                        <div class="portfolio-description">
+                            <h2>Project Overview: Estate Management Application</h2>
+                            <p>
+                                The Estate Management Application is a comprehensive platform designed to streamline property management for various stakeholders, including agents, building owners, tenants, buyers, and companies. The platform provides essential tools for managing properties, finances, leases, communication, and documentation. The application aims to simplify tasks like managing tenants, overseeing maintenance, tracking finances, and handling lease agreements, making the property management process more efficient.    
+                            </p>
+                        </div>
+
+                        <div class="portfolio-description">
+                            <h2>Key Stakeholders & User Roles</h2>
+                            <ul>
+                                <li>
+                                    <strong>Agent: </strong>
+                                    Manages listings, assists tenants and buyers, and mediates property deals.
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Building Owner: </strong>
+                                    Oversees properties, manages tenants, handles rent collection, and addresses maintenance issues.
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Buyer: </strong>
+                                    Views and searches available properties for purchase.
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Company: </strong>
+                                    Engages in leasing or purchasing properties for business use.
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Tenant: </strong>
+                                    Rents properties and communicates with building owners for payments, maintenance, and lease agreements.
+                                </li>
+                                <br>
+                            </ul>
+                        </div>
+
+                        <div class="portfolio-description">
+                            <h2>Main Features</h2>
+                            <ul>
+                                <li>
+                                    <strong>Dashboard Management: </strong>
+                                    <ul class="mt-2">
+                                        <li><strong>Building Owner Dashboard: </strong>Manage properties, tenants, finances, and maintenance activities.</li>
+                                        <li><strong>Agent Dashboard: </strong>Allows agents to manage property listings and view tasks.</li>
+                                        <li><strong>Buyer Dashboard: </strong>Enables buyers to search and filter properties based on preferences.</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Property and House Management: </strong>
+                                    <ul class="mt-2">
+                                        <li>Manage house details like size, number of apartments, floors, and garage space.</li>
+                                        <li>Dynamic filtering for searching houses based on various criteria.</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Lease Agreement Management: </strong>
+                                    <ul class="mt-2">
+                                        <li>Automated lease processes with rent amounts, payment schedules, and terms.</li>
+                                        <li>Integrated rent payment portal for seamless transactions.</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Tenant Communication & Chat System: </strong>
+                                    <ul class="mt-2">
+                                        <li>Real-time or message-based communication between tenants and building owners.</li>
+                                        <li>Handle inquiries related to payments, maintenance, and leases.</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Financial Management: </strong>
+                                    <ul class="mt-2">
+                                        <li>Rent payment tracking and receipt generation.</li>
+                                        <li>Expense management for building owners to monitor property costs.</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Document Management: </strong>
+                                    <ul class="mt-2">
+                                        <li>Structured archive for lease agreements, receipts, and legal documents.</li>
+                                        <li>Easy retrieval and management of important paperwork.</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Maintenance Tracking: </strong>
+                                    <ul class="mt-2">
+                                        <li>Tenants can submit maintenance requests, and building owners can manage repairs.</li>
+                                        <li>Track the status of ongoing maintenance tasks.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="portfolio-description">
+                            <h2>Technologies & Tools</h2>
+                            <ul>
+                                <li>
+                                    <strong>Django Framework: </strong>
+                                    <ul class="mt-2">
+                                        <li>Used for building the backend, managing models, forms, and views.</li>
+                                        <li>Facilitates the creation of a robust ORM for interacting with the database.</li>
+                                        <li>Ensures rapid development with Django's built-in admin and authentication features.</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Bootstrap: </strong>
+                                    <ul class="mt-2">
+                                        <li>Provides a responsive front-end framework for clean, mobile-friendly UI design.</li>
+                                        <li>Leverages the grid system and utility classes to maintain consistent styling across the app.</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3">
+                                    <strong>JavaScript & jQuery: </strong>
+                                    <ul class="mt-2">
+                                        <li>Implements dynamic UI elements, such as interactive forms and pop-up modals.</li>
+                                        <li>Enhances user experience by handling form validation and AJAX requests.</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3">
+                                    <strong>SQLite/MySQL: </strong>
+                                    <ul class="mt-2">
+                                        <li>Handles data storage for tenants, properties, leases, and financial records.</li>
+                                        <li>Efficient for both small-scale and large-scale database management.</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Chart.js & ApexCharts: </strong>
+                                    <ul class="mt-2">
+                                        <li>Used for data visualization, including rent payments, financial overviews, and tenant statistics.</li>
+                                        <li>Supports interactive charts with dynamic hover effects and resizing options.</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Git & GitHub: </strong>
+                                    <ul class="mt-2">
+                                        <li>Version control for tracking changes and collaborating on the project.</li>
+                                        <li>GitHub used to store the project code and manage repositories.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        
+                            <h2 class="mt-5">Challenges Addressed</h2>
+                            <ul>
+                                <li>
+                                    <strong>Tenant Communication: </strong>
+                                    <ul class="mt-2">
+                                        <li>Implemented an in-app chat system for streamlined communication between tenants and building owners.</li>
+                                        <li>Allowed for easy submission of maintenance requests and follow-ups.</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Lease & Payment Management: </strong>
+                                    <ul class="mt-2">
+                                        <li>Integrated rent payment tracking with automatic reminders for tenants and owners.</li>
+                                        <li>Automated the lease agreement process, making it accessible online for tenants and building owners.</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Property Filtering: </strong>
+                                    <ul class="mt-2">
+                                        <li>Developed a dynamic search system for filtering properties based on criteria such as size, location, and price.</li>
+                                        <li>Enabled agents and buyers to easily find and evaluate properties matching their requirements.</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Document Management: </strong>
+                                    <ul class="mt-2">
+                                        <li>Created a document archive system to store and retrieve essential property documents.</li>
+                                        <li>Organized by document type and easy access for building owners and agents.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        
+                            <h2 class="mt-5">Future Plans</h2>
+                            <ul>
+                                <li>
+                                    <strong>Real-Time Chat Integration: </strong>
+                                    <ul class="mt-2">
+                                        <li>Enhance the chat system by incorporating real-time functionality using WebSockets.</li>
+                                        <li>Allow for faster communication between tenants and building owners without refreshing the page.</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Advanced Analytics: </strong>
+                                    <ul class="mt-2">
+                                        <li>Develop more advanced financial analytics for building owners to track income, expenses, and tenant behavior.</li>
+                                        <li>Integrate machine learning algorithms for predictive insights into property management.</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Mobile App Development: </strong>
+                                    <ul class="mt-2">
+                                        <li>Build a mobile application for easier access to property management features on the go.</li>
+                                        <li>Allow tenants, agents, and building owners to interact with the system from their mobile devices.</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3">
+                                    <strong>Payment Gateway Integration: </strong>
+                                    <ul class="mt-2">
+                                        <li>Integrate popular payment gateways like PayPal, Stripe, or Flutterwave for seamless rent payments.</li>
+                                        <li>Provide multiple payment options for tenants, ensuring greater flexibility and convenience.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>                        
+                        
+                        
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Portfolio Details Section -->
+
+    </main><!-- End #main -->
+{% endblock content %}

@@ -29,3 +29,9 @@ def portfolio(request):
 
     }
     return render(request, "portfolio.html", context)
+
+def estate_manage(request):
+    return render(request, "portfolio_est_mana_detail.html")
+
+def banking(request):
+    return render(request, "portfolio_banking_detail.html")
