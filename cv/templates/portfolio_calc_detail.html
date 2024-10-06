@@ -50,7 +50,152 @@
                     </div>
 
                     <div class="col-lg-11">
-                        {% comment %} <div class="portfolio-description"> {% endcomment %}
+                        <div class="portfolio-description">
+                            <h2>Mini Calculator Project Report</h2>
+                            <p>This project is a Python-based mini calculator that performs basic arithmetic operations including exponentiation, division, multiplication, subtraction, and addition. The calculator processes a list of mathematical expressions and outputs the solution. It also includes validation to handle errors such as alphabetic characters in the equation and division by zero.</p>
+                        
+                            <h2 class="mt-4">Modules and Functions:</h2>
+                            <ul>
+                                <li>
+                                    <strong>Imports: </strong>
+                                    <ul class="mt-2">
+                                        <li>
+                                            <strong>os: </strong>Used to restart the script in case of an error like division by zero.
+                                        </li>
+                                        <li class="mt-2">
+                                            <strong>sys: </strong>Provides access to command-line arguments and is used alongside os for restarting the script.
+                                        </li>
+                                        <li class="mt-2">
+                                            <strong>string.ascii_lowercase: </strong>Used to detect alphabetic characters in the input to prevent invalid inputs.
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="mt-3">
+                                    <strong>Key Variables: </strong>
+                                    <ul class="mt-2">
+                                        <li>
+                                            <strong>operator: </strong>A list of operators supported by the calculator, including exponentiation (^), multiplication (*), division (/), addition (+), and subtraction (-).
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="mt-3">
+                                    <strong>Core Functions: </strong>
+                                    <ul class="mt-2">
+                                        <li>
+                                            <strong>solve(equation): </strong>This is the main function responsible for solving the arithmetic expression. It checks for alphabetic characters in the equation, removes spaces, handles decimal points, and performs calculations in the correct order of operations (PEMDAS: Parentheses, Exponents, Multiplication/Division, Addition/Subtraction). The result is accumulated and returned at the end.
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="mt-3">
+                                    <strong>Support Functions: </strong>
+                                    <ul class="mt-2">
+                                        <li>
+                                            <strong>spaces(values): </strong>Removes any spaces from the input values to ensure the equation is correctly processed.
+                                        </li>
+                                        <li class="mt-2">
+                                            <strong>full_stop(values): </strong>Detects decimal points and merges the values around it to form decimal numbers.
+                                        </li>
+                                        <li class="mt-2">
+                                            <strong>raised_to_pow(values): </strong>Handles exponentiation (i.e., raising numbers to a power) by solving expressions involving the ^ operator.
+                                        </li>
+                                        <li class="mt-2">
+                                            <strong>division(values): </strong>Solves division operations while checking for division by zero errors, which would otherwise cause runtime exceptions.
+                                        </li>
+                                        <li class="mt-2">
+                                            <strong>multiplication(values): </strong>Processes and solves multiplication problems.
+                                        </li>
+                                        <li class="mt-2">
+                                            <strong>subtraction(values): </strong>Merges subtraction operators and the numbers they apply to in the input list.
+                                        </li>
+                                        <li class="mt-2">
+                                            <strong>addition(values): </strong>Merges addition operators and the numbers they apply to in the input list.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <h2 class="mt-4">Error Handling:</h2>
+                            <ul>
+                                <li>
+                                    <strong>The program effectively handles: </strong>
+                                    <ul class="mt-2">
+                                        <li>
+                                            <strong>Alphabetic Characters: </strong>The function solve checks if any alphabetic characters are present in the input equation, and if found, prompts the user with an error message to rewrite the equation.
+                                        </li>
+                                        <li class="mt-2">
+                                            <strong>Zero Division Error: </strong>In the division function, any attempt to divide by zero triggers a ZeroDivisionError. The program handles this gracefully by printing a relevant message and restarting the program.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <h2 class="mt-4">Order of Operations:</h2>
+                            <p>The program follows the order of operations rule (PEMDAS) to ensure expressions are evaluated correctly:</p>
+                            <ul class="mt-2">
+                                <li>
+                                    <strong>Exponentiation (raised_to_pow).</strong>
+                                </li>
+                                <li class="mt-2">
+                                    <strong>Division (division).</strong>
+                                </li>
+                                <li class="mt-2">
+                                    <strong>Multiplication (multiplication).</strong>
+                                </li>
+                                <li class="mt-2">
+                                    <strong>Subtraction (subtraction).</strong>
+                                </li>
+                                <li class="mt-2">
+                                    <strong>Addition (addition).</strong>
+                                </li>
+                            </ul>
+                            <p>Each of these operations is handled by individual functions that process the corresponding operator, updating the input list by replacing the operation with the result.</p>
+
+                            <h2 class="mt-4">Project Features:</h2>
+                            <ul>
+                                <li>
+                                    <strong>Basic Arithmetic Support: </strong>
+                                    The calculator supports operations like exponentiation, division, multiplication, addition, and subtraction.
+                                </li>
+                                <li class="mt-2">
+                                    <strong>Decimal Handling: </strong>
+                                    The program can process decimal numbers accurately.
+                                </li>
+                                <li class="mt-2">
+                                    <strong>Input Validation: </strong>
+                                    Ensures that the equation does not contain any invalid characters (e.g., alphabetic letters) and handles division by zero.
+                                </li>
+                                <li class="mt-2">
+                                    <strong>Recursive Solution: </strong>
+                                    The solve function recursively evaluates the expression, ensuring all operations are correctly processed.
+                                </li>
+                            </ul>
+
+                            <h2 class="mt-4">Enhancements:</h2>
+                            <ul>
+                                <li>
+                                    <strong>Parentheses Support: </strong>
+                                    The current implementation does not handle expressions involving parentheses. Adding this feature would further improve the flexibility of the calculator.
+                                </li>
+                                <li class="mt-2">
+                                    <strong>User-Friendly Input: </strong>
+                                    Implementing a more intuitive input mechanism, such as allowing users to input equations directly as strings, would make the calculator more user-friendly.
+                                </li>
+                                <li class="mt-2">
+                                    <strong>Improved UI: </strong>
+                                    A simple graphical interface or even a command-line interface with better formatting could improve usability.
+                                </li>
+                                <li class="mt-2">
+                                    <strong>Additional Operations: </strong>
+                                    Expanding the operations to include other mathematical functions like square root, logarithms, and trigonometric functions would enhance the calculator's capabilities.
+                                </li>
+                            </ul>
+
+                            <h2 class="mt-4">Conclusion:</h2>
+                            <p>This mini calculator project successfully handles basic arithmetic operations, implements input validation, and ensures that errors like division by zero are gracefully handled. With further enhancements such as parentheses handling and improved user input, the calculator could become even more versatile.</p>
+                        </div>
                     </div>
                 </div>
             </div>

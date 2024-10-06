@@ -50,7 +50,90 @@
                     </div>
 
                     <div class="col-lg-11">
-                        {% comment %} <div class="portfolio-description"> {% endcomment %}
+                        <div class="portfolio-description">
+                            <h2>Tic-Tac-Toe Game Report</h2>
+                            <p>The Tic-Tac-Toe project is a console-based game where two players compete against each other. The game allows users to select either 'X' or 'O' as their sign, and play continues until one player wins or the game ends in a tie. The game resets after each set and can be replayed.</p>
+                            
+                            <h2 class="mt-4">Modules and Functions:</h2>
+                            <ul>
+                                <li>
+                                    <strong>Imports: </strong>
+                                    <ul class="mt-2">
+                                        <li>
+                                            <strong>os: </strong>Used for clearing the console.
+                                        </li>
+                                        <li class="mt-2">
+                                            <strong>time: </strong>Introduces delays and pauses during gameplay.
+                                        </li>
+                                        <li class="mt-2">
+                                            <strong>from gamers import *: </strong>Imports user-defined classes or functions from the gamers module, likely handling player-specific logic.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mt-4">
+                                    <strong>Core Functions: </strong>
+                                    <ul class="mt-2">
+                                        <li>
+                                            <strong>clear(): </strong>Clears the console screen using <code>os.system('clear')</code>.
+                                        </li>
+                                        <li class="mt-2">
+                                            <strong>play(): </strong>The main gameplay loop. Manages the entire game flow, iterating over sets, checking for ties, and allowing players to place their symbols on the grid. It resets the game grid between sets.
+                                        </li>
+                                        <li class="mt-2">
+                                            <strong>tie(): </strong>Checks if the game has ended in a tie by verifying if all positions are filled and there is no winner.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mt-4">
+                                    <strong>Game Logic: </strong>
+                                    <ul class="mt-2">
+                                        <li>Players are prompted to select where to place their symbol ('X' or 'O') by entering the corresponding position number.</li>
+                                        <li class="mt-2">The <code>Game.checking()</code> method checks for winning combinations on the grid (rows, columns, and diagonals).</li>
+                                        <li class="mt-2">If the game ends in a tie, it is replayed until a winner is found or a tie occurs again.</li>
+                                        <li class="mt-2">After each set, the grid is reset, and a new round starts.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <h2 class="mt-4">Classes:</h2>
+                            <ul>
+                                <li>
+                                    <strong>Game (inherits from Gamers): </strong>
+                                    <ul class="mt-2">
+                                        <li>
+                                            <strong>position: </strong>A dictionary representing the grid's positions (e.g., pos1 to pos9).
+                                        </li>
+                                        <li class="mt-2">
+                                            <strong>play(): </strong>Displays the Tic-Tac-Toe grid.
+                                        </li>
+                                        <li class="mt-2">
+                                            <strong>checking(): </strong>Verifies if there is a winning combination on the grid.
+                                        </li>
+                                        <li class="mt-2">
+                                            <strong>game_selection(): </strong>Allows Player 1 to select their sign ('X' or 'O'), with Player 2 automatically assigned the remaining sign.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <h2 class="mt-4">Gameplay Flow:</h2>
+                            <ul>
+                                <li>The game starts with Player 1 selecting either 'X' or 'O'.</li>
+                                <li class="mt-2">Players take turns selecting grid positions to place their symbols.</li>
+                                <li class="mt-2">After each move, the game checks for a winner. If there is no winner and all positions are filled, the game ends in a tie, and the set is replayed.</li>
+                                <li class="mt-2">The game resets after each set, and the process continues for the number of sets defined.</li>
+                            </ul>
+
+                            <h2 class="mt-4">Potential Enhancements:</h2>
+                            <ul>
+                                <li>A graphical user interface (GUI) could enhance the user experience.</li>
+                                <li class="mt-2">Implementing AI for single-player mode.</li>
+                                <li class="mt-2">Additional game features such as score tracking.</li>
+                            </ul>
+
+                            <h2 class="mt-4">Conclusion:</h2>
+                            <p>The Tic-Tac-Toe project demonstrates a solid understanding of game logic and flow control, utilizing Python's basic functionalities to create an engaging console game. The project is well-structured, and the gameplay experience is intuitive for users.</p>
+                        </div>
                     </div>
                 </div>
             </div>
