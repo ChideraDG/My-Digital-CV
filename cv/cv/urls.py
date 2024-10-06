@@ -19,7 +19,8 @@ from django.urls import path
 from my_cv import views
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
+    # path("admin/", admin.site.urls),
+    path("", views.home),
     path("home/", views.home, name="home"),
     path("about/", views.about, name="about"),
     path("resume/", views.resume, name="resume"),
