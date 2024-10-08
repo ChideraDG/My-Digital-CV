@@ -30,4 +30,5 @@ urlpatterns = [
     path("portfolio/banking/", views.banking, name="banking"),
     path("portfolio/mini-calculator/", views.calculator, name="calc"),
     path("portfolio/tic-tac-toe/", views.tic_tac_toe, name="tic"),
+    path("contact-me/", views.contact_me, name="contact-me"),
 ]
